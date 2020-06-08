@@ -341,7 +341,6 @@ img {
   border-radius: 0px 0px 4px 4px;
   padding-top: 27px;
   padding-bottom: 27px;
-  /*max-height: 70px;*/
 }
 
 .work {
@@ -489,7 +488,13 @@ img {
 }
 
 .customers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
   color: #afb1b8;
+  /* outline: 2px solid tomato; */
 }
 
 .customers-icon {
@@ -502,8 +507,12 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
-.customers-icon:hover {
+.customers-link:hover .customers-icon {
   fill: var(--accent-color);
+}
+
+.customers-list .item:hover {
+  border: 1px solid var(--accent-color);
 }
 
 /*Footer*/
